@@ -16,6 +16,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="mapper.xml"/>
+        <mapper resource= "com/ohgiraffers/section01/xmlconfig/menu-mapper.xml"/>
     </mappers>
 </configuration>
