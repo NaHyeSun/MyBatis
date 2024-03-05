@@ -5,29 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0007981-6787-4007-bace-4404b6253ed6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section02/javaconfig/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section02/javaconfig/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section02/javaconfig/MenuDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section02/javaconfig/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section02/javaconfig/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section02/javaconfig/PrintResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section02/javaconfig/Template.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/PrintResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/Template.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ohgiraffers/section03/remix/MenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/Template.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/config/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/735f06b3-30d5-4661-ba52-d4cf7118a394.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/735f06b3-30d5-4661-ba52-d4cf7118a394.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ohgiraffers/section01/xmlconfig/menu-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ohgiraffers/section01/xmlconfig/menu-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/DynamicSqlMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/MenuDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/com/ohgiraffers/section01/xml/DynamicSqlMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/config/connection-info.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/config/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/config/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709524758733</updated>
       <workItem from="1709524759754" duration="16149000" />
-      <workItem from="1709604818901" duration="3628000" />
+      <workItem from="1709604818901" duration="4852000" />
     </task>
     <servers />
   </component>
