@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="MenuMapper">
+
     <!--조회한 컬럼과 DTO를 매핑시키기 위한 설정 -->
     <resultMap type ="com.ohgiraffers.section01.xmlconfig.MenuDTO" id = "menuResultMap">
         <id property="code" column="MENU_CODE"/>
