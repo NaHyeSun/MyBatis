@@ -5,6 +5,11 @@
 <configuration>
     <properties resource="config/connection-info.properties"/>
 
+    <typeAliases>
+        <typeAlias type="com.ohgiraffers.section01.xml.SearchCriteria" alias="SearchCriteria"/>
+        <typeAlias type="com.ohgiraffers.section01.xml.MenuDTO" alias="MenuDTO"/>
+    </typeAliases>
+
     <environments default="dev">
         <environment id="dev">
             <transactionManager type="JDBC"/>

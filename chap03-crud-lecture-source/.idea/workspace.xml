@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0007981-6787-4007-bace-4404b6253ed6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/DynamicSqlMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/MenuDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/com/ohgiraffers/section01/xml/DynamicSqlMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/config/connection-info.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/SearchCriteria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/DynamicSqlMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/DynamicSqlMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/java/com/ohgiraffers/section01/xml/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/com/ohgiraffers/section01/xml/DynamicSqlMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/com/ohgiraffers/section01/xml/DynamicSqlMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/config/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap04-dynamic-sql-lecture-source/src/main/resources/config/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709524758733</updated>
       <workItem from="1709524759754" duration="16149000" />
-      <workItem from="1709604818901" duration="4852000" />
+      <workItem from="1709604818901" duration="4979000" />
     </task>
     <servers />
   </component>
