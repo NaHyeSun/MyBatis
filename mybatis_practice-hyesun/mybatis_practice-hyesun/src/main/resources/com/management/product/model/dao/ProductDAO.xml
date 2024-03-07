@@ -35,30 +35,34 @@
         FROM PRODUCT_INFO
         ORDER BY PRODUCT_CODE
     </select>
-    <select id="selectProductByCondition" parameterType="searchCondition" resultMap="productResultMap">
+    <select id="selectProductByCondition" parameterType="com.common.SearchCondition" resultMap="productResultMap">
 
-    SELECT      PRODUCT_CODE
-                ,PRODUCT_NAME
-                ,ORIGIN_COST
-                ,RELEASE_DATE
-                ,DISCOUNT_RATE
-                ,SALES_QUANTITY
-                ,STOCK_QUANTITY
-                ,CATEGORY_CODE
-                ,PRODUCTION_STATUS
-    FROM PRODUCT_INFO
-    <if test="searchValue == 'productName'">
-        AND PRODUCT_NAME LIKE CONCAT('%', #{value}, '%')
+    SELECT      A.PRODUCT_CODE
+                ,A.PRODUCT_NAME
+                ,A.ORIGIN_COST
+                ,A.RELEASE_DATE
+                ,A.DISCOUNT_RATE
+                ,A.SALES_QUANTITY
+                ,A.STOCK_QUANTITY
+                ,A.CATEGORY_CODE
+                ,A.PRODUCTION_STATUS
+    FROM PRODUCT_INFO A
+        <where>
+    <if test="option == 'productName'">
+        A.PRODUCT_NAME LIKE CONCAT('%', #{value}, '%')
     </if>
-     <if test="searchValue == '백화점'">
-         AND DISCOUNT_RATE = 0
-     </if>
-        <if test="searchValue == '아울렛'">
-            <![CDATA[AND DISCOUNT_RATE >= 1]]>
-        </if>
-        <if test="condition == newProduct">
-            AND RELEASE_DATE
-        </if>
+         <if test="option == '백화점'">
+              A.DISCOUNT_RATE == 0
+           </if>
+<!--        <if test="option == '아울렛'">-->
+<!--            <![CDATA[AND DISCOUNT_RATE >= 1]]>-->
+<!--        </if>-->
+<!--        <if test="option == newProduct">-->
+<!--            <![CDATA[RELEASE_DATE > 2023.05.01]]>-->
+<!--        </if>-->
+
+        </where>
+
 </select>
     <!-- 4. 조건에 따른 목록을 조회하는 쿼리를 작성하세요.
             (쿼리id) selectProductByCondition
