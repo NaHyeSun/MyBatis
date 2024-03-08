@@ -47,21 +47,30 @@
                 ,A.CATEGORY_CODE
                 ,A.PRODUCTION_STATUS
     FROM PRODUCT_INFO A
-        <where>
-    <if test="option == 'productName'">
-        A.PRODUCT_NAME LIKE CONCAT('%', #{value}, '%')
-    </if>
-         <if test="option == '백화점'">
-              A.DISCOUNT_RATE == 0
-           </if>
+        <choose>
+        <when>
+        <if test="option == 'productName'">
+             A.PRODUCT_NAME LIKE CONCAT('%', #{value}, '%')
+        </if>
+        </when>
+
+        <when>
+        <if test="option == 'salesStore'">
+
+        </if>
 <!--        <if test="option == '아울렛'">-->
 <!--            <![CDATA[AND DISCOUNT_RATE >= 1]]>-->
 <!--        </if>-->
+            <otherwise>
+
+            </otherwise>
 <!--        <if test="option == newProduct">-->
 <!--            <![CDATA[RELEASE_DATE > 2023.05.01]]>-->
 <!--        </if>-->
+        </otherwise>
+        </when>
+        </choose>
 
-        </where>
 
 </select>
     <!-- 4. 조건에 따른 목록을 조회하는 쿼리를 작성하세요.
