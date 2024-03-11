@@ -47,29 +47,31 @@
                 ,A.CATEGORY_CODE
                 ,A.PRODUCTION_STATUS
     FROM PRODUCT_INFO A
-        <choose>
-        <when>
+
+        <where>
         <if test="option == 'productName'">
              A.PRODUCT_NAME LIKE CONCAT('%', #{value}, '%')
         </if>
-        </when>
 
-        <when>
-        <if test="option == 'salesStore'">
-
+        <if test="value == '백화점'">
+             AND CAST(DISCOUNT_RATE AS SIGNED INTEGER) = 0
         </if>
-<!--        <if test="option == '아울렛'">-->
-<!--            <![CDATA[AND DISCOUNT_RATE >= 1]]>-->
-<!--        </if>-->
-            <otherwise>
+        <if test="value == '아울렛'">
+            AND CAST(DISCOUNT_RATE AS SIGNED INTEGER) > 0
+        </if>
 
-            </otherwise>
-<!--        <if test="option == newProduct">-->
-<!--            <![CDATA[RELEASE_DATE > 2023.05.01]]>-->
-<!--        </if>-->
-        </otherwise>
-        </when>
-        </choose>
+        <if test="option == 'newProduct'">
+            AND CAST(SUBSTRING(NOW(), 6, 2) AS SIGNED INTEGER) = CAST(SUBSTRING(RELEASE_DATE, 5, 2) AS SIGNED
+            INTEGER)
+            AND CAST(SUBSTRING(RELEASE_DATE, 1, 4) AS SIGNED INTEGER) = CAST(SUBSTRING(NOW(), 1, 4) AS SIGNED
+            INTEGER)
+        </if>
+
+        <if test="option == 'nonProduction'">
+            AND PRODUCTION_STATUS != 'Y'
+        </if>
+        </where>
+
 
 
 </select>
