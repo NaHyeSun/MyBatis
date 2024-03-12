@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0007981-6787-4007-bace-4404b6253ed6" name="Changes" comment="" />
+    <list default="true" id="c0007981-6787-4007-bace-4404b6253ed6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ohgiraffers/section03/remix/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ohgiraffers/section03/remix/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/model/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/model/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/model/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/model/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/view/ProductPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/view/ProductPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/resources/com/management/product/model/dao/ProductDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/resources/com/management/product/model/dao/ProductDAO.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/dev/lecture_code/MyBatis/chap04-dynamic-sql-lecture-source",
+    "last_opened_file_path": "C:/dev/lecture_code/MyBatis/mybatis_practice-hyesun/mybatis_practice-hyesun",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,6 +93,8 @@
       <workItem from="1709524759754" duration="16149000" />
       <workItem from="1709604818901" duration="4979000" />
       <workItem from="1709705194591" duration="12079000" />
+      <workItem from="1710151235895" duration="3853000" />
+      <workItem from="1710203089781" duration="4359000" />
     </task>
     <servers />
   </component>

@@ -14,8 +14,8 @@ public class ProductController {
 
     // 1. 자주 사용할 Service와 Print 객체를 선언하고, Controller 객체 생성 시 생성되도록 작성하세요.
 
-    ProductService productService = new ProductService();
-    ProductPrint productPrint = new ProductPrint();
+    private final ProductService productService = new ProductService();
+    private final ProductPrint productPrint = new ProductPrint();
     public void selectAllProductList() {
 
         // 2. 전체 제품 목록을 조회하는 메소드
@@ -61,6 +61,20 @@ public class ProductController {
         //    (조건 3) insert가 정상적으로 수행된 경우, Print 객체를 통해 등록 성공했다는 성공 메세지를 출력하세요.
         //    (조건 4) insert가 정상적으로 수행되지 않은 경우, Print 객체를 통해 등록 실패했다는 오류 메세지를 출력하세요.
 
+
+        product.setReleaseDate(product.getReleaseDate().replaceAll("-",""));
+        product.setProductionStatus("Y");
+        product.setSalesQuantity("0");
+
+        boolean IsTure = productService.registNewProduct(product);
+
+        if(IsTure){
+            productPrint.printSuccessMessage("insert");
+
+        }else{
+            productPrint.printErrorMessage("insert");
+        }
+
     }
 
     public void modifyProductInfo(ProductDTO product) {
@@ -71,6 +85,17 @@ public class ProductController {
         //　  (조건 2) Service 객체를 호출하여 수정을 수행하고, 결과를 boolean 값으로 return 받으세요.
         //    (조건 3) update가 정상적으로 수행된 경우, Print 객체를 통해 수정 성공했다는 성공 메세지를 출력하세요.
         //    (조건 4) update가 정상적으로 수행되지 않은 경우, Print 객체를 통해 수정 실패했다는 오류 메세지를 출력하세요.
+
+        product.setReleaseDate(product.getReleaseDate().replaceAll("-",""));
+
+        boolean IsTure = productService.modifyProductInfo(product);
+
+        if(IsTure){
+            productPrint.printSuccessMessage("update");
+
+        }else{
+            productPrint.printErrorMessage("update");
+        }
 
     }
 

@@ -66,6 +66,7 @@
         ,CATEGORY_CODE = #{ categoryCode }
         WHERE MENU_CODE = #{ code }
     </update>
+
     <delete id="deleteMenu" parameterType="com.ohgiraffers.section03.remix.MenuDTO">
         DELETE
         FROM    TBL_MENU

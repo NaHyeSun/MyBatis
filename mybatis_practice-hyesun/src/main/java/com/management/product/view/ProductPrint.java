@@ -35,8 +35,9 @@ public class ProductPrint {
         // 3. 성공메시지를 출력하는 메소드
         //    (조건) 성공코드를 전달받아 성공을 알리는 메시지를 출력하세요.
         String successMassage = "";
-        switch (successMassage) {
-            case "" : successMassage = ""; break;
+        switch (successCode) {
+            case "insert" : successMassage = "제품 등록에 성공하였습니다. "; break;
+            case "update" : successMassage = "제품 수정에 성공하였습니다. "; break;
         }
         System.out.println(successMassage);
     }
@@ -47,9 +48,11 @@ public class ProductPrint {
         //    (조건) 에러코드를 전달받아 에러를 알리는 메시지를 출력하세요.
 
         String errorMessage = "";
-        switch (errorMessage) {
+        switch (errorCode) {
             case "productList" : errorMessage = "전체 제품 목록 조회에 실패하였습니다. "; break;
             case "productListByCondition" : errorMessage = "조건에 따른 제품 목록 조회에 실패 하였습니다."; break;
+            case "insert" : errorMessage = "제품 등록에 실패 하였습니다."; break;
+            case "update" : errorMessage = "제품 수정에 실패 하였습니다."; break;
 
         }
         System.out.println(errorMessage);
