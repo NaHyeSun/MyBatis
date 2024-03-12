@@ -27,7 +27,7 @@ public class ProductPrint {
 
         System.out.println("검색 옵션 :"+ searchCondition.getOption()+"내용: " + searchCondition.getValue());
         for (ProductDTO productDTO :productList)
-        System.out.println(productDTO);
+            System.out.println(productDTO);
     }
 
     public void printSuccessMessage(String successCode) {
