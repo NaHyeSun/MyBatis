@@ -64,6 +64,7 @@ public class CategoryMenu {
 
         CategoryDTO categoryDTO = new CategoryDTO();
         // 주석을 지우고 받아온 정보를 categoryDTO 객체에 setting 하세요.
+        categoryDTO.setCategoryName(categoryName);
 
         return categoryDTO;
     }
@@ -81,6 +82,7 @@ public class CategoryMenu {
         CategoryDTO categoryDTO = new CategoryDTO();
         // 주석을 지우고 받아온 정보를 categoryDTO 객체에 setting 하세요.
 
+        categoryDTO.setCategoryCode(categoryCode);
         return categoryDTO;
     }
 

@@ -97,7 +97,21 @@ public class ProductService {
 
         // 6. 제품 정보를 삭제하는 로직을 작성하세요.
         // 　　아래 작성된 return false 과제 툴 오류를 제거하고자 임의 작성하였으니 지우고 로직을 작성하세요.
-        return false;
+
+        SqlSession sqlSession = getSqlSession();
+        productDAO = sqlSession.getMapper(ProductDAO.class);
+
+        int result = productDAO.deleteProduct (parameter) ;
+
+        if(result > 0 ) {
+            sqlSession.commit();
+        }else {
+            sqlSession.rollback();
+        }
+
+        sqlSession.close();
+
+        return result >0? true : false;
 
     }
 }

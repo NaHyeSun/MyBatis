@@ -7,6 +7,9 @@ import java.util.List;
 public interface CategoryDAO {
     List<CategoryDTO> selectCategoryList();
 
+    int insertCategory(CategoryDTO category);
+
+
 
     // * 주석을 지우고 Mapper interface(= DAO class) 역할을 하도록 내용을 작성하세요.
 

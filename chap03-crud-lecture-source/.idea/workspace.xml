@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0007981-6787-4007-bace-4404b6253ed6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ohgiraffers/section03/remix/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ohgiraffers/section03/remix/MenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/model/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/model/dao/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/model/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/model/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/view/ProductPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/java/com/management/product/view/ProductPrint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/resources/com/management/product/model/dao/ProductDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/mybatis_practice-hyesun/src/main/resources/com/management/product/model/dao/ProductDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/common/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/common/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/category/view/CategoryMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/category/view/CategoryMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/product/model/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/product/model/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/product/model/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/product/model/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/product/view/ProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/product/view/ProductMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/product/view/ProductPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/java/com/management/product/view/ProductPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/resources/com/management/category/model/dao/CategoryDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/resources/com/management/category/model/dao/CategoryDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/resources/com/management/product/model/dao/ProductDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-hyesun/src/main/resources/com/management/product/model/dao/ProductDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis_practice-master/mybatis_practice/src/main/java/com/management/product/view/ProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis_practice-master/mybatis_practice/src/main/java/com/management/product/view/ProductMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +25,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="chap03-crud-lecture-source" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,7 +71,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/dev/lecture_code/MyBatis/mybatis_practice-hyesun/mybatis_practice-hyesun",
+    "last_opened_file_path": "C:/dev/lecture_code/MyBatis/chap03-crud-lecture-source",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,6 +114,7 @@
       <workItem from="1709705194591" duration="12079000" />
       <workItem from="1710151235895" duration="3853000" />
       <workItem from="1710203089781" duration="4359000" />
+      <workItem from="1710289986733" duration="6613000" />
     </task>
     <servers />
   </component>
@@ -113,6 +133,41 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/Application.java</url>
           <line>54</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuService.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuService.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuService.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuService.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuService.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuController.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ohgiraffers/section03/remix/MenuController.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

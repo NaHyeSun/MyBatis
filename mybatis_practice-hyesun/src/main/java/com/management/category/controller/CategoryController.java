@@ -24,7 +24,7 @@ import java.util.Map;
 
         List<CategoryDTO> categoryList = categoryService.selectCategoryList(parameter);
 
-        if(categoryList != null ){
+        if(categoryList != null && !categoryList.isEmpty() ){
             categoryPrint.printTeamList(categoryList,parameter);
         }else {
             categoryPrint.printErrorMessage("categoryList");
@@ -38,6 +38,11 @@ import java.util.Map;
         //    (조건 2) insert가 정상적으로 수행된 경우, Print 객체를 통해 등록 성공했다는 성공 메세지를 출력하세요.
         //    (조건 3) insert가 정상적으로 수행되지 않은 경우, Print 객체를 통해 등록 실패했다는 오류 메세지를 출력하세요.
 
+        if(categoryService.registNewCategory(category)){
+            categoryPrint.printSuccessMessage("insert");
+        }else{
+            categoryPrint.printErrorMessage("failInsert");
+        }
     }
 
     public void modifyCategoryName(CategoryDTO category) {

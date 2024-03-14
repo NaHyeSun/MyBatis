@@ -106,5 +106,13 @@ public class ProductController {
         //    (조건 2) delete가 정상적으로 수행된 경우, Print 객체를 통해 삭제 성공했다는 성공 메세지를 출력하세요.
         //    (조건 3) delete가 정상적으로 수행되지 않은 경우, Print 객체를 통해 삭제 실패했다는 오류 메세지를 출력하세요.
 
+        boolean deleteProduct = productService.deleteProduct(parameter);
+
+        if(deleteProduct){
+            productPrint.printSuccessMessage("successDelete");
+
+        }else{
+            productPrint.printErrorMessage("failDelete");
+        }
     }
 }

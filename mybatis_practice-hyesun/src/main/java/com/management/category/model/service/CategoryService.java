@@ -17,6 +17,8 @@ public class CategoryService {
 
         // 2. 제품분류 목록을 조회하는 로직을 작성하세요.
         // 　　아래 작성된 return null은 과제 툴 오류를 제거하고자 임의 작성하였으니 지우고 로직을 작성하세요.
+
+
         SqlSession sqlSession = getSqlSession();
         categoryDAO = sqlSession.getMapper(CategoryDAO.class);
         List<CategoryDTO> categoryList = categoryDAO.selectCategoryList();
@@ -31,7 +33,19 @@ public class CategoryService {
 
         // 3. 제품분류 정보를 등록하는 로직을 작성하세요.
         // 　　아래 작성된 return false 과제 툴 오류를 제거하고자 임의 작성하였으니 지우고 로직을 작성하세요.
-        return false;
+        SqlSession sqlSession = getSqlSession();
+        categoryDAO = sqlSession.getMapper(CategoryDAO.class);
+
+        int result = categoryDAO.insertCategory(category);
+
+        if(result > 0) {
+            sqlSession.close();
+        }else{
+            sqlSession.rollback();
+        }
+        sqlSession.close();
+
+        return result > 0? true: false;
 
     }
 

@@ -38,6 +38,7 @@ public class ProductPrint {
         switch (successCode) {
             case "insert" : successMassage = "제품 등록에 성공하였습니다. "; break;
             case "successUpdate" : successMassage = "제품 수정에 성공하였습니다. "; break;
+            case "successDelete" : successMassage = "제품 삭제에 성공하였습니다. "; break;
         }
         System.out.println(successMassage);
     }
@@ -53,6 +54,7 @@ public class ProductPrint {
             case "productListByCondition" : errorMessage = "조건에 따른 제품 목록 조회에 실패 하였습니다."; break;
             case "insert" : errorMessage = "제품 등록에 실패 하였습니다."; break;
             case "failUpdate" : errorMessage = "제품 수정에 실패 하였습니다."; break;
+            case "failDelete" : errorMessage = "제품 삭제에 실패 하였습니다."; break;
 
         }
         System.out.println(errorMessage);

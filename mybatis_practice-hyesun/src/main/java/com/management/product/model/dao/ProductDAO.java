@@ -4,6 +4,7 @@ import com.common.SearchCondition;
 import com.management.product.model.dto.ProductDTO;
 
 import java.util.List;
+import java.util.Map;
 
 public interface ProductDAO {
     List<ProductDTO> selectAllProductList();
@@ -13,6 +14,8 @@ public interface ProductDAO {
     int insertProduct(ProductDTO product);
 
     int updateProduct(ProductDTO product);
+
+    int deleteProduct(Map<String, String> parameter);
 
 
 

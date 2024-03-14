@@ -103,58 +103,65 @@
         <!-- 6. 사용자가 수정을 원하는 데이터만 수정하도록 Dynamic Query를 활용한 쿼리를 작성하세요.
             (쿼리id) updateProduct -->
 
-<update id="updateProduct" parameterType="com.management.product.model.dto.ProductDTO" >
+<!--<update id="updateProduct" parameterType="com.management.product.model.dto.ProductDTO" >-->
 
-            UPDATE
-                   product_info
-            SET
-                  PRODUCT_NAME = #{ productName }
-                 ,ORIGIN_COST = #{ originCost }
-                 ,RELEASE_DATE= #{ releaseDate }
-                 ,DISCOUNT_RATE= #{ discountRate }
-                 ,SALES_QUANTITY= #{ salesQuantity }
-                 ,STOCK_QUANTITY= #{ stockQuantity }
-                 ,CATEGORY_CODE= #{ categoryCode }
-                 ,PRODUCTION_STATUS= #{ productionStatus }
-            WHERE
-                  PRODUCT_CODE = #{ productCode }
-    </update>
-
-
-<!--    <update id="updateProduct" parameterType=""  >-->
-<!--        UPDATE product_info-->
-<!--        <trim prefix="set" prefixOverrides=",">-->
-<!--            <if test="productName != 'SKIP'">-->
-<!--                PRODUCT_NAME = #{ productName }-->
-<!--            </if>-->
-<!--            <if test="categoryCode != 'SKIP'">-->
-<!--                ,CATEGORY_CODE = #{ categoryCode }-->
-<!--            </if>-->
-<!--            <if test="originCost != 'SKIP'">-->
-<!--                ,ORIGIN_COST = #{ originCost }-->
-<!--            </if>-->
-<!--            <if test="releaseDate != 'SKIP'">-->
-<!--                ,RELEASE_DATE = #{ releaseDate }-->
-<!--            </if>-->
-<!--            <if test="stockQuantity != 'SKIP'">-->
-<!--            </if>-->
-<!--           ,STOCK_QUANTITY = #{ stockQuantity }-->
-
-<!--            <if test="salesQuantity != 'SKIP'">-->
-<!--                ,SALES_QUANTITY = #{ salesQuantity }-->
-<!--            </if>-->
-<!--            <if test="productionStatus != 'SKIP'">-->
-<!--               ,PRODUCTION_STATUS = #{ productionStatus }-->
-<!--            </if>-->
-<!--        </trim>-->
-<!--       WHERE-->
-<!--         PRODUCT_CODE =#{ productCode }-->
+<!--            UPDATE-->
+<!--                   product_info-->
+<!--            SET-->
+<!--                  PRODUCT_NAME = #{ productName }-->
+<!--                 ,ORIGIN_COST = #{ originCost }-->
+<!--                 ,RELEASE_DATE= #{ releaseDate }-->
+<!--                 ,DISCOUNT_RATE= #{ discountRate }-->
+<!--                 ,SALES_QUANTITY= #{ salesQuantity }-->
+<!--                 ,STOCK_QUANTITY= #{ stockQuantity }-->
+<!--                 ,CATEGORY_CODE= #{ categoryCode }-->
+<!--                 ,PRODUCTION_STATUS= #{ productionStatus }-->
+<!--            WHERE-->
+<!--                  PRODUCT_CODE = #{ productCode }-->
 <!--    </update>-->
+
+
+    <update id="updateProduct" parameterType="com.management.product.model.dto.ProductDTO"  >
+        UPDATE
+               product_info
+
+        <trim prefix="set" prefixOverrides=",">
+            <if test="productName != 'SKIP'">
+                PRODUCT_NAME = #{ productName }
+            </if>
+            <if test="categoryCode != 'SKIP'">
+                ,CATEGORY_CODE = #{ categoryCode }
+            </if>
+            <if test="originCost != 'SKIP'">
+                ,ORIGIN_COST = #{ originCost }
+            </if>
+            <if test="releaseDate != 'SKIP'">
+                ,RELEASE_DATE = #{ releaseDate }
+            </if>
+            <if test="stockQuantity != 'SKIP'">
+                ,STOCK_QUANTITY = #{ stockQuantity }
+            </if>
+            <if test="salesQuantity != 'SKIP'">
+                ,SALES_QUANTITY = #{ salesQuantity }
+            </if>
+            <if test="productionStatus != 'SKIP'">
+               ,PRODUCTION_STATUS = #{ productionStatus }
+            </if>
+        </trim>
+       WHERE
+         PRODUCT_CODE =#{ productCode }
+    </update>
 
 
 
     <!-- 7. 제품 정보를 삭제하는 쿼리를 작성하세요.
             (쿼리id) deleteProduct -->
+
+    <delete id="deleteProduct" parameterType="com.management.product.model.dto.ProductDTO">
+        DELETE
+        FROM   product_info
+        WHERE  PRODUCT_CODE = #{ productCode }
+    </delete>
 </mapper>
 
 
